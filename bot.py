@@ -2,6 +2,7 @@ import os
 import discord
 from discord.ext import commands
 from dotenv import load_dotenv
+import streamlit as st
 
 # Load environment variables from a .env file
 load_dotenv()
@@ -61,3 +62,4 @@ async def on_member_update(before, after):
 
 # Run the bot
 bot.run(TOKEN)
+st.Title("Bot might be running")
